@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>High or Low game</title>
+</head>
+<body>
+
+  
+    <center>
+
+        <div>
+            <div>
+                <p > 
+                    <h1>High or Low</h1>
+                </p>
+                
+                <p id="mode">
+                    <button id="ez"> Easy</button>
+                    <button id="nor"> Normall</button>
+                    <button id="hard"> Hard</button>
+                </p>
+
+                <h3> Hp <p id="hp"></p></h3>
+                
+                
+            </div>
+            <br>
+            
+            <div>
+                <p class="c3">
+                    Rule : Guess <span style="color: tomato;"> one</span>  number from 1-100 <br>
+                    If wrong, you will lose HP and hint will show up.
+                </p>
+            </div>
+                <form action="" id="myForm" onkeydown="return event.key != 'Enter';" >
+                    <input type="number" id="num" placeholder="Number">
+                    
+                    <p>
+                        <button type="button" id="enter" class="enter"> Enter</button>
+                        <button type="reset" class="reset" > try again</button>
+                    </p>
+                    
+                    
+
+                </form>
+
+                <p id="result"></p>
+                previous answer : <span id="hint"></span> 
+                <p> hint : <span id="hint2"> </span> </p>
+
+                <div class="card">
+                    
+
+                </div>
+
+
+            
+            </div> 
+
+
+    </center>
+</body>
+<script src="dist/js/game.js"></script>
+</html>
+
